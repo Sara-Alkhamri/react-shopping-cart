@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 // Components
 import Item from './ShoppingCartItem';
+
+//context
+import CartContext from '../contexts/CartContext';
 
 const ShoppingCart = props => {
 	const getCartTotal = () => {
