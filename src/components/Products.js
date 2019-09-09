@@ -3,6 +3,9 @@ import React from 'react';
 // Components
 import Product from './Product';
 
+//context
+import ProductContext from '../contexts/ProductContext';
+
 const Products = props => {
 	return (
 		<div className="products-container">
