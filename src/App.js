@@ -19,6 +19,7 @@ function App() {
 	};
 
 	return (
+	<ProductContext.Provider>
 		<div className="App">
 			<Navigation cart={cart} />
 
@@ -39,6 +40,7 @@ function App() {
 				render={() => <ShoppingCart cart={cart} />}
 			/>
 		</div>
+		</ProductContext.Provider>		
 	);
 }
 
