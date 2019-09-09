@@ -7,6 +7,8 @@ import Item from './ShoppingCartItem';
 import CartContext from '../contexts/CartContext';
 
 const ShoppingCart = props => {
+	const { cart } = useContext(CartContext);
+	
 	const getCartTotal = () => {
 		return props.cart.reduce((acc, value) => {
 			return acc + value.price;
